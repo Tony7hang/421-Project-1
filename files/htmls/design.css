@@ -14,10 +14,3 @@ a.active-pg{
     background-color: aqua;
     font-weight: bold;
 }
-
-/* v home specific v */
-
-div.top-lv-nav-home{
-    position: relative;
-    margin: 0px 0px 0px 50px;
-}
