@@ -10,15 +10,15 @@
 
 <body>
     <div class = "top-lv-nav"> <nav> <ul class = "nav-list">
-        <li> <a href = "home.html"> Home* </a> </li> 
-        <li> <a href = "topic.html"> Topic </a> </li> 
-        <li> <a href = "research.html"> Research* </a> </li> 
-        <li> <a class = "active-pg" href = "data.html"> Data* </a> </li> 
-        <li> <a href = "references.html"> References </a> </li> 
-        <li> <a href = "style.html"> Style </a> </li> 
-        <li> <a href = "layout.html"> Layout </a> </li> 
-        <li> <a href = "modality.html"> Modality </a> </li> 
-        <li> <a href = "professionalization.html"> Professionalization </a> </li> 
+        <li class = "nav-e"> <a href = "home.html"> Home* </a> </li> 
+        <li class = "nav-e"> <a href = "topic.html"> Topic </a> </li> 
+        <li class = "nav-e"> <a href = "research.html"> Research* </a> </li> 
+        <li class = "nav-e-active"> <a href = "data.html"> Data* </a> </li> 
+        <li class = "nav-e"> <a href = "references.html"> References </a> </li> 
+        <li class = "nav-e"> <a href = "style.html"> Style </a> </li> 
+        <li class = "nav-e"> <a href = "layout.html"> Layout </a> </li> 
+        <li class = "nav-e"> <a href = "modality.html"> Modality </a> </li> 
+        <li class = "nav-e"> <a href = "professionalization.html"> Professionalization </a> </li> 
     </ul> </nav> </div>
 
     <div class = "title">
@@ -126,7 +126,7 @@
 
         <figure>
             <cite> Figure 3 </cite>
-            <img src = "../illustrations/datalesson_fig3 (1).png" alt = "data lession figure 2 png">
+            <img src = "../illustrations/datalesson_fig3 (1).png" alt = "data lession figure 3 (1) png">
             <figcaption> CAPTION: Tutorial type, gender, experience, and task categorical values have been formatted as 
                 dichotomous variables. </figcaption>
         </figure>
@@ -144,13 +144,113 @@
 
         <p> Run descriptive (summary) statistics on the dataset and output results in a new spreadsheet. If necessary, 
             rearrange columns so that data requiring summary, those with <em class = "blue"> continuous </em> values, are 
-            adjacent. (In the spreadsheet, the continuous values of <span class = "italics"> perc_enjoy, perc_usefulness </span>, 
-            and <span class = "italics"> perc_ease_of_use </span> are already adjacent.) </p>
+            adjacent. (In the spreadsheet, the continuous values of <span class = "italics"> perc_enjoy, perc_usefulness 
+            </span>, and <span class = "italics"> perc_ease_of_use </span> are already adjacent.) </p>
         <p> Write down the "input range" (i.e. H2:J26) of the data requiring summary, making sure not to include variable 
             labels. </p>
             <ol>
-                <li></li>
+                <li> Go to <span class = "bolds"> Tools > Add-Ins... </span> and make sure <span class = "bolds"> Analysis 
+                    ToolPak </span> is checked. Click OK. </li>
+                <li> Go to <span class = "bolds"> Tools > Data Analysis </span> and select <span class = "bolds"> Descriptive 
+                    Statistics </span>. Click OK. </li>
+                <li> Enter the input range in the blank and check <span class = "bolds"> Summary Statistics </span>. Click OK. 
+                </li>
             </ol>
+
+        <p> The descriptive statistics summary will output in a new sheet. Rename this spreadsheet Descriptive_Stats. Label 
+            the output according to the variables. For example, <span class = "italics"> Column 1 </span> should be 
+            <span class = "italics"> perc_enjoy </span>. Your Descriptive_Stats spreadsheet should now look like Figure 4.
+            Analyzing descriptive statistics is a great way to start appraising a dataset before running inferential statistics. 
+            What insights about the dataset can you glean from the summary statistics for <span class = "italics"> perc_usefulness 
+            </span> and <span class = "italics"> perc_ease_of_use </span>? </p>
+
+        <figure>
+            <cite> Figure 3 </cite>
+            <img src = "../illustrations/datalesson_fig4.png" alt = "data lession figure 4 png">
+            <figcaption> CAPTION: Excel will not run descriptive statistics with non-numeric characters, so the variable 
+                labels must be re-entered. </figcaption>
+        </figure>
+    </div>
+
+    <div class = "Section4">
+        <h2> Run inferential statistics </h2>
+
+        <p> Open PASW and upload the spreadsheet. (IIT labs in Stuart Building, room 112, have PASW. You can also download 
+            a 30-day free trial.) </p>
+            <ol>
+                <li> When PASW starts, it will prompt you for a data source. Select <span class = "bolds"> Open an existing 
+                    data source > More Files...</span> </li>
+                <li> Set the file type to Excel, then find and open the file. </li>
+                <li> From the list, select the Formatted_Data worksheet. Click OK. You should now see the dataset. </li>
+            </ol>
+
+        <p> The most commonly used statistical methods and tests are found under the <span class = "bolds"> Analyze </span> 
+            menu in the standard toolbar. </p>
+
+        <p> Figure 5 shows where to find some common statistical methods and tests. Under PASW's <span class = "bolds"> 
+            Analyze </span> menu, see if you can also find the following: </p>
+            <ol>
+                <li> Wilcoxon-Mann-Whitney test </li>
+                <li> Simple linear regression </li>
+                <li> Non-parametric correlation </li>
+            </ol>
+
+        <figure>
+            <cite> Figure 5 </cite>
+            <img src = "../illustrations/datalesson_fig5.png" alt = "data lession figure 5 png">
+            <figcaption> CAPTION: Don't assume PASW doesn't run a given test. Many are located under broader statistical 
+                classifications. </figcaption>
+        </figure>
+
+        <p> Use your prior knowledge or the <a href = "http://www.ats.ucla.edu/stat/mult_pkg/whatstat/default.htm"> Choosing 
+            the Correct Statistic </a> resource to determine which statistic to run to find whether there is a significant 
+            difference in <span class = "italics"> perc_usefulness </span> between <span class = "italics"> free_play </span> 
+            and other tutorial types. </p>
+        
+        <aside>
+            <p> Consult <a href = "http://www.ats.ucla.edu/stat/mult_pkg/whatstat/default.htm"> UCLA's Choosing the Correct 
+                Statistic </a> to ensure the statistical anlaysis is appropriate for your research question(s), variables of 
+                interest, and associated data types. </p>
+        </aside>
+
+        <p> You should have determined that the Kruskal-Wallis one-way analysis of variance is the appropriate test. Go to 
+            <span class = "bolds"> Analyze > Nonparametric Tests > K Independent Samples... </span> A new window will open 
+            prompting you to select the variables (by column name) to be tested. </p>
+            <ol>
+                <li> Select the <span class = "italics"> perc_usefulness </span> variable from the scrollable list on the 
+                    left, and click the top arrow to move it to the Test Variable List (i.e. dependent variable). </li>
+                <li> Select the <span class = "italics"> free_play </span> variable from the scrollable list, and click the 
+                    bottom arrow to move it to the Grouping Variable section (i.e. independent variable). </li>
+                <li> Click <span class = "bolds"> Define Range... </span>, and enter "0" in the Minimum field and "1" in the 
+                    Maximum field. This specifies the two categorical variables to be tested. Your screen should now look 
+                    like Figure 6. Click Continue. </li>
+            </ol>
+
+        <figure>
+            <cite> Figure 6 </cite>
+            <img src = "../illustrations/datalesson_fig6.png" alt = "data lession figure 6 png">
+            <figcaption> CAPTION: For Kruskal-Wallis, an independent (free_play) and a dependent variable (perc_usefulness) 
+                are selected. </figcaption>
+        </figure>
+
+        <p> Click OK to display the statistical analysis results to new viewing window. Your results screen should look like 
+            Figure 7. Because statistical analysis output contains many numerical components (some of which must be cited 
+            in formal reports), it is a good idea to save it to a format independent of the PASW software. To save the results, 
+            go to <span class = "bolds"> File > Export </span>. Change Document Type to the desired output format (Word, Excel, 
+            PDF, etc.), then click OK. </p>
+        
+        <figure>
+            <cite> Figure 7 </cite>
+            <img src = "../illustrations/datalesson_fig7.png" alt = "data lession figure 7 png">
+            <figcaption> CAPTION: PASW allows users to export statistics to common document types. </figcaption>
+        </figure>
+    </div>
+
+    <div class = "section5">
+        <h3> Test your knowledge </h3>
+
+        <p> Now that you've finished the lesson, please complete a short quiz to test your understanding of formatting research 
+            datasets for comprehensive statistical analysis. </p>
     </div>
 </body>
 
