@@ -1,19 +1,45 @@
 body {
 	background-color: white;
-    width: 720px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
-
-div.top-lv-nav{
+/* --- --- --- --- --- --- --- --- --- */
+div.top-lv-nav {
     position: absolute;
     margin: 0px 0px 0px -250px;
 }
-ul.nav-list{
+ul.nav-list {
     list-style-type: none;
 }
-
-a.active-pg{
+a.active-pg {
     background-color: aqua;
     font-weight: bold;
+}
+/* --- --- --- --- --- --- --- --- --- */
+aside {
+    width: 30%;
+    position: relative;
+    margin: -15px 0px 0px 5px;
+    padding: 0px 2px 0px 0px;
+    float: right;
+    font-style: italic;
+}
+/* --- --- --- --- --- --- --- --- --- */
+em.blue {
+    color: blue;
+}
+/* --- --- --- --- --- --- --- --- --- */
+span.italics {
+    font-style: italic;
+}
+span.bolds {
+    font-weight: bold;
+}
+/* --- --- --- --- --- --- --- --- --- */
+a:link {
+    color: darkblue;
+}
+a:visited {
+    color: darkblue;
 }
