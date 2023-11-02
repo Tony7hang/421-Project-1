@@ -94,6 +94,28 @@ li.nav-e-active:hover {
     display: block;
 }
 /* --- --- --- --- --- --- --- --- --- */
+nav#home-subnav {
+    position: absolute;
+
+    margin: 0px 0px 0px 340px;
+
+    visibility: hidden;
+}
+nav#home-subnav:hover {
+    visibility: visible;
+}
+/* --- --- --- --- --- */
+nav#topic-subnav {
+    position: absolute;
+
+    margin: 60px 0px 0px 340px;
+
+    visibility: hidden;
+}
+nav#topic-subnav:hover {
+    visibility: visible;
+}
+/* --- --- --- --- --- */
 nav#research-subnav {
     position: absolute;
 
@@ -103,6 +125,104 @@ nav#research-subnav {
 }
 nav#research-subnav:hover {
     visibility: visible;
+}
+/* --- --- --- --- --- */
+nav#data-subnav {
+    position: absolute;
+
+    margin: 179px 0px 0px 340px;
+
+    visibility: hidden;
+}
+nav#data-subnav:hover {
+    visibility: visible;
+}
+/* --- --- --- --- --- */
+nav#references-subnav {
+    position: absolute;
+
+    margin: 239px 0px 0px 340px;
+
+    visibility: hidden;
+}
+nav#references-subnav:hover {
+    visibility: visible;
+}
+/* --- --- --- --- --- */
+nav#style-subnav {
+    position: absolute;
+
+    margin: 299px 0px 0px 340px;
+
+    visibility: hidden;
+}
+nav#style-subnav:hover {
+    visibility: visible;
+}
+/* --- --- --- --- --- */
+nav#layout-subnav {
+    position: absolute;
+
+    margin: 358px 0px 0px 340px;
+
+    visibility: hidden;
+}
+nav#layout-subnav:hover {
+    visibility: visible;
+}
+/* --- --- --- --- --- */
+nav#modality-subnav {
+    position: absolute;
+
+    margin: 418px 0px 0px 340px;
+
+    visibility: hidden;
+}
+nav#modality-subnav:hover {
+    visibility: visible;
+}
+/* --- --- --- --- --- */
+nav#professionalization-subnav {
+    position: absolute;
+
+    margin: 478px 0px 0px 340px;
+
+    visibility: hidden;
+}
+nav#professionalization-subnav:hover {
+    visibility: visible;
+}
+/* --- --- --- --- --- --- --- --- --- */
+li.sub-nav-e a:link {
+    color: var(--red);
+    text-decoration: none;
+    display: block;
+}
+li.sub-nav-e a:visited {
+    color: var(--red);
+    text-decoration: none;
+    display: block;
+}
+li.sub-nav-e a:hover {
+    color: var(--cream);
+    font-weight: bolder;
+    text-decoration: none;
+    display: block;
+}
+
+ul.sub-nav-list{
+    position: absolute;
+
+    margin: -15px 0px 0px -204px;
+    border: 4px solid var(--gold);
+    border-radius: 7px;
+    padding: 3px 3px 3px 3px;
+
+    width: 250px;
+
+    background-color: var(--gold);
+
+    list-style-type: none;
 }
 img.da {
     visibility: visible;
@@ -121,21 +241,36 @@ div.title {
     color: var(--cream);
 }
 
-h2 {
+h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 27px;
+    font-size: 36px;
+}
+
+h2 {
+    margin: 25px 0px 10px 0px;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
 }
 
 h3 {
+    margin: 20px 0px 10px 0px;
+
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 24px;
+    font-size: 25px;
 
     text-decoration: underline 3px var(--red);
 }
 
 h4 {
+    margin: 15px 0px 10px 0px;
+
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 21px;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
 }
 
 div.section {
