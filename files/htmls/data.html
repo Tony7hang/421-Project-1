@@ -9,17 +9,29 @@
 </head>
 
 <body>
-    <div class = "top-lv-nav"> <nav> <ul class = "nav-list">
-        <li class = "nav-e"> <a href = "home.html"> Home* </a> </li> 
-        <li class = "nav-e"> <a href = "topic.html"> Topic </a> </li> 
-        <li class = "nav-e"> <a href = "research.html"> Research* </a> </li> 
-        <li class = "nav-e-active"> <a href = "data.html"> Data* </a> </li> 
-        <li class = "nav-e"> <a href = "references.html"> References </a> </li> 
-        <li class = "nav-e"> <a href = "style.html"> Style </a> </li> 
-        <li class = "nav-e"> <a href = "layout.html"> Layout </a> </li> 
-        <li class = "nav-e"> <a href = "modality.html"> Modality </a> </li> 
-        <li class = "nav-e"> <a href = "professionalization.html"> Professionalization </a> </li> 
-    </ul> </nav> </div>
+    <div class = "top-lv-nav"> <nav> 
+        <nav id = "data-subnav">
+            <img class = "da" src = "../icons/down-arrow.png" alt = "down arrow icon">
+            <ul class = "nav-list">
+                <li class = "sub-nav-e"> <a href = "#data-1"> Format data for analysis </a> </li>
+                <li class = "sub-nav-e"> <a href = "#data-2"> Run descriptive statistics </a> </li>
+                <li class = "sub-nav-e"> <a href = "#data-3"> Run inferential statistics </a> </li>
+                <li class = "sub-nav-e"> <a href = "#data-4"> Test your knowledge </a> </li>
+            </ul> 
+        </nav>
+
+        <ul class = "nav-list">
+            <li class = "nav-e"> <a href = "home.html"> Home* </a> </li> 
+            <li class = "nav-e"> <a href = "topic.html"> Topic </a> </li> 
+            <li class = "nav-e"> <a href = "research.html"> Research* </a> </li> 
+            <li class = "nav-e-active"> <a href = "data.html"> Data* </a> </li> 
+            <li class = "nav-e"> <a href = "references.html"> References </a> </li> 
+            <li class = "nav-e"> <a href = "style.html"> Style </a> </li> 
+            <li class = "nav-e"> <a href = "layout.html"> Layout </a> </li> 
+            <li class = "nav-e"> <a href = "modality.html"> Modality </a> </li> 
+            <li class = "nav-e"> <a href = "professionalization.html"> Professionalization </a> </li> 
+        </ul> 
+    </nav> </div>
 
     <div class = "title">
         <h1 id = "data-title"> How to organize and analyze research data </h1>
@@ -73,7 +85,7 @@
             </ol>
         
         <figure>
-            <cite> Figure 1 </cite>
+            <cite> <p> Figure 1 </p> </cite>
             <img src = "../illustrations/datalesson_fig1.png" alt = "data lession figure 1 png">
             <figcaption> Tutorial type, gender, experience, and task categorical values have been formatted as 
                 dichotomous variables. </figcaption>
@@ -94,7 +106,7 @@
             </ol>    
 
         <figure>
-            <cite> Figure 2 </cite>
+            <cite> <p> Figure 2 </p> </cite>
             <img src = "../illustrations/datalesson_fig2.png" alt = "data lession figure 2 png">
             <figcaption> Values for each variable are entered in a consistent format </figcaption>
         </figure>
@@ -125,7 +137,7 @@
         </ol>
 
         <figure>
-            <cite> Figure 3 </cite>
+            <cite> <p> Figure 3 </p> </cite>
             <img src = "../illustrations/datalesson_fig3.png" alt = "data lession figure 3 png">
             <figcaption> Tutorial type, gender, experience, and task categorical values have been formatted as 
                 dichotomous variables. </figcaption>
@@ -165,14 +177,14 @@
             </span> and <span class = "italics"> perc_ease_of_use </span>? </p>
 
         <figure>
-            <cite> Figure 3 </cite>
+            <cite> <p> Figure 3 </p> </cite>
             <img src = "../illustrations/datalesson_fig4.png" alt = "data lession figure 4 png">
             <figcaption> Excel will not run descriptive statistics with non-numeric characters, so the variable 
                 labels must be re-entered. </figcaption>
         </figure>
     </div>
 
-    <div class = "Section">
+    <div class = "section">
         <h2 id = "data-3"> Run inferential statistics </h2>
 
         <p> Open PASW and upload the spreadsheet. (IIT labs in Stuart Building, room 112, have PASW. You can also download 
@@ -196,7 +208,7 @@
             </ol>
 
         <figure>
-            <cite> Figure 5 </cite>
+            <cite> <p> Figure 5 </p> </cite>
             <img src = "../illustrations/datalesson_fig5.png" alt = "data lession figure 5 png">
             <figcaption> Don't assume PASW doesn't run a given test. Many are located under broader statistical 
                 classifications. </figcaption>
@@ -227,7 +239,7 @@
             </ol>
 
         <figure>
-            <cite> Figure 6 </cite>
+            <cite> <p> Figure 6 </p> </cite>
             <img src = "../illustrations/datalesson_fig6.png" alt = "data lession figure 6 png">
             <figcaption> For Kruskal-Wallis, an independent (free_play) and a dependent variable (perc_usefulness) 
                 are selected. </figcaption>
@@ -240,7 +252,7 @@
             PDF, etc.), then click OK. </p>
         
         <figure>
-            <cite> Figure 7 </cite>
+            <cite> <p> Figure 7 </p> </cite>
             <img src = "../illustrations/datalesson_fig7.png" alt = "data lession figure 7 png">
             <figcaption> PASW allows users to export statistics to common document types. </figcaption>
         </figure>

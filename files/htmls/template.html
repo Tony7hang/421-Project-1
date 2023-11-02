@@ -6,46 +6,59 @@
     <link rel = "stylesheet" type = "text/css" media = "screen" href = "design.css">
     <!-- above sets up the css file and stuff -->
 
-    <title> <!-- add a title here --> </title> 
+    <title> <!-- add a tab title here --> </title> 
 </head>
 
 <body>
-    <div class = "top-lv-nav"> <nav> <ul class = "nav-list">
-        <li class = "nav-e"> <a href = "home.html"> Home* </a> </li>
-        <li class = "nav-e"> <a href = "topic.html"> Topic </a> </li>
-        <li class = "nav-e"> <a href = "research.html"> Research* </a> </li>
-        <li class = "nav-e"> <a href = "data.html"> Data* </a> </li>
-        <li class = "nav-e"> <a href = "references.html"> References </a> </li>
-        <li class = "nav-e"> <a href = "style.html"> Style </a> </li>
-        <li class = "nav-e"> <a href = "layout.html"> Layout </a> </li>
-        <li class = "nav-e"> <a href = "modality.html"> Modality </a> </li>
-        <li class = "nav-e"> <a href = "professionalization.html"> Professionalization </a> </li>
-        <li class = "nav-e-active"> <a href = "template.html"> template </a> </li>
-            <!-- add a new list item with class set to nav-e-active. 
-                give it a link to this module and give it a text.
-                make sure to change any previous nav-e-active to just nav-e, we only want 1 nav-e-active per module -->
-    </ul> </nav> </div>
+    <div class = "top-lv-nav"> <nav> 
+        <nav id = "template-subnav">
+            <img class = "da" src = "../icons/down-arrow.png" alt = "down arrow icon"> <!-- down arrow icon -->
+            <ul class = "nav-list">
+                <li class = "sub-nav-e"> <a href = "#template-1"> <!-- title of section --> </a> </li> <!-- sub nav here -->
+                    <!-- set the a href to section id -->
+            </ul> 
+        </nav>
+        
+        <ul class = "nav-list">
+            <li class = "nav-e"> <a href = "home.html"> Home* </a> </li>
+            <li class = "nav-e"> <a href = "topic.html"> Topic </a> </li>
+            <li class = "nav-e"> <a href = "research.html"> Research* </a> </li>
+            <li class = "nav-e"> <a href = "data.html"> Data* </a> </li>
+            <li class = "nav-e"> <a href = "references.html"> References </a> </li>
+            <li class = "nav-e"> <a href = "style.html"> Style </a> </li>
+            <li class = "nav-e"> <a href = "layout.html"> Layout </a> </li>
+            <li class = "nav-e"> <a href = "modality.html"> Modality </a> </li>
+            <li class = "nav-e"> <a href = "professionalization.html"> Professionalization </a> </li>
+            <li class = "nav-e-active"> <a href = "template.html"> <!-- add name of page here --> </a> </li>
+                <!-- add a new list item with class set to nav-e-active. 
+                    give it a link to this module and give it a text.
+                    make sure to change any previous nav-e-active to just nav-e, we only want 1 nav-e-active per module 
+                    also make sure to update all the navs in the other html files! -->
+        </ul> 
+    </nav> </div>
 
     <div class = "title">
-        <h1 id = "style-title"> Style... </h1>
+        <h1 id = "style-title"> <!-- add title of page here --> </h1>
     </div>
 
     <div class = "section">
-        <h2 id = "template-1"> ... </h2>
+        <h2 id = "template-1"> <!-- add a title of a section here --> </h2>
 
-        <p> ... </p>
+        <!-- add contents of the section here -->
 
         <div class = "sub-section">
-            <h3 id = "template-1-1"> ... </h3>
+            <h3 id = "template-1-1"> <!-- add a title of a sub-section here --> </h3>
 
-            <aside>
-                <p> ... </p>
+            <!-- add contents of the section here -->
+
+            <aside> <!-- example of a aside -->
+                <p> <!-- add contents of the asside here --> </p>
             </aside>
 
-            <figure>
-                <cite> ... </cite>
-                <img src = "..." alt = "...">
-                <figcaption> ... </figcaption>
+            <figure> <!-- example of a figure -->
+                <cite> <p> <!-- add a figure title here --> </p> </cite>
+                <img src = "..." alt = "..."> <!-- add the link and alternative text here -->
+                <figcaption> <!-- add a caption here --> </figcaption>
             </figure>
         </div>
     </div>
